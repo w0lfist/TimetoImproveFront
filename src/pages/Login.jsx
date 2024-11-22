@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
   const apiUrl = import.meta.env.VITE_API_URL;
-  console.log("API URL:", apiUrl);
   const [formData, setFormData] = useState({
     username: "",
     password: ""
