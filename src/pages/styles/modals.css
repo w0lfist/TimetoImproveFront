@@ -1,0 +1,147 @@
+/* Fondo semitransparente del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Contenido del modal */
+.modal-content {
+    background: white;
+    padding-top: 0;
+    padding-bottom: 3vh;
+    border-radius: 8px;
+    border: 1vb solid #132258;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    text-align: center;
+  }
+  
+  /* Botón para cerrar el modal */
+.close-button {
+    background-color: #bd1d20;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+.day-list-createtag {
+    list-style-type: none; /* Elimina el estilo de lista por defecto */
+    padding: 0; /* Elimina el padding */
+  }
+  
+.day-list-createtag li {
+    margin: 0 1vb; /* Espaciado entre los días */
+    cursor: pointer; /* Cambia el cursor a mano al pasar el ratón */
+    padding: 0.5vb 1vb; /* Padding alrededor del texto */
+    transition: background-color 0.3s; /* Animación al cambiar el fondo */
+    margin: 0.8vb;
+    font-size: 2vb;
+  }
+  
+.day-list-createtag li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+  }
+  
+.day-list-createtag li.selected {
+    background-color: #1ab7bc; /* Color de fondo para el día seleccionado */
+    color: white; /* Color de texto para el día seleccionado */
+    border-radius: 5px; /* Esquinas redondeadas */
+  }
+
+.container-routinesearch {
+    width: 50%;
+  }
+
+  .container-routinesearch button {
+    width: 10vw;
+
+  }
+
+  .box-routine-name {
+    text-align: center;
+    width: 20vw;
+    height: 20vh;
+    font-size: 2vb;
+    overflow: hidden;  /* Oculta barras de desplazamiento */
+    resize: none;      /* Evita que el usuario redimensione el textarea */
+    line-height: 1.5;
+    border: none;
+    font-weight: bold;      /* Opcional: ajusta el borde para que se parezca a un input */
+  }
+
+.createone-tagbutton button {
+    margin-top: 2vh;
+    min-height: 3vh;
+    height: auto;
+    min-width: auto;
+    width: 12vw;
+    color: black;
+    border: 0.3vb solid #aaf300;
+    border-radius: 2vb;
+    background: none;
+    cursor: pointer;
+    font-size: 2vb;
+  }
+.create-tag {
+  width: 100%;
+}
+
+.introduction-tag {
+  width: 100%;
+  height: 5vh;
+  border-bottom: 0.2vb solid gray;
+  padding-top: 2vb;
+  padding-bottom: 0;
+  margin-bottom: 2vb;
+}
+
+.introduction-tag h2 {
+  margin: 0;
+}
+
+.createtag-form form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2vh;
+  border-bottom: 0.2vb solid gray;
+}
+
+
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  .createone-tagbutton button {
+    font-size: 2vb;
+    width: 30vw;
+  }
+  .container-routinesearch button {
+    width: 28vw;
+
+  }
+  
+  .modal-content {
+    padding-bottom: 0;
+  }
+
+  .box-routine-name{
+    width: 25vw;
+  }
+}
+
+  

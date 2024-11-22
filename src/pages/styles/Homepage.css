@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.subheader {
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(135deg, #1ab7bc, #080d1f);
+    background-size: 200% 200%; /* Aumenta el tamaño del fondo */
+    animation: gradientShift 5s ease infinite; /* Animación de movimiento del fondo */
+    display: flex;
+    flex-direction: row; /* Mantener en fila por defecto */
+    align-items: center;
+    padding: 1vh;
+    box-sizing: border-box;
+    transition: height 0.3s ease;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; } /* A mitad de camino, llega al 100% */
+    100% { background-position: 0% 50%; } /* Regresa suavemente al inicio */
+}
+.container-img {
+    width: 60%;
+    height: 95%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.welcome-img {
+    height: 100%;
+    border-radius: 20px;
+    margin-top: 2vh;
+}
+
+.login-space {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    width: 40%;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.form-login {
+    width: 70%;
+    font-size: 2vb;
+}
+
+.timetoimprove-logo {
+    width: 10vb;
+    text-align: center;
+    margin-bottom: 2vh;
+    border: 0.3vb solid white;
+    border-radius: 20px;
+}
+
+.welcome {
+    font-size: 3vb;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.register {
+    text-align: center;
+    width: 30vw;
+}
+
+.register-button {
+    width: 80%;
+    height: 3.5vh;
+    margin-top: 1vh;
+    border-radius: 0.5vb;
+    border: 0.4vb solid #b0cf6a;
+    background: none;
+    font-size: 2vb;
+    color: white;
+    cursor: pointer;
+}
+
+.subtittle {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 2vb;
+}
+
+.welcome-two {
+    font-size: 2vb;
+}
+
+.form-login form {
+    box-sizing: border-box;
+}
+
+
+.input-username input {
+    
+    width: 90%;
+    padding: 0 1.5vb;
+    height: 4vh;
+    font-size: 1.8vb;
+}
+
+form .input-password {
+    margin-top: 1.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.input-password input {
+    width: 90%;
+    padding: 0 1.5vb;
+    height: 4vh;
+    font-size: 1.8vb;
+}
+
+.login-button {
+    width: 70%;
+    margin-left: 8vb;
+    height: 4vh;
+    font-size: 2.5vb;
+    border: 0.4vb solid #4caf50 ;
+    border-radius: 0.5vb;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    width: 70%;
+    margin: 3vb;
+    font-size: 2vb;
+    line-height: 3.5vh;
+}
+
+.presentation-tti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.presentation-textcontainer {
+    font-family: "Roboto", sans-serif;
+    line-height: 3.3vh;
+    font-size: 2vb;
+    width: 60%;
+    margin: 3vb;
+}
+
+.presentation-textcontainer h2 {
+    margin: 3vb;
+    font-size: 4vb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.presentation-imgscontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    perspective: 1000px; /* Añade una perspectiva 3D */
+    margin: 2vb;
+}
+
+.image-interface {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: rotateY(-25deg); /* Rotación inicial en el eje Y */
+    cursor: pointer; /* Indica que es interactiva */
+    z-index: 20;
+}
+
+.image-rutineassign {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform: rotateY(-35deg); /* Rotación inicial en el eje Y */
+    cursor: pointer; /* Indica que es interactiva */
+    z-index: 20;
+}
+
+.dashboard-img {
+    width: 18vw;
+    margin: 2vb;
+}
+
+.image-interface:hover {
+    transform: rotateY(0deg) scale(1.2); /* Regresa a su orientación normal y hace zoom */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Agrega sombra para destacar el efecto */
+    z-index: 300;
+}
+
+.createtags-img {
+    width: 18vw;
+    margin: 2vb;
+}
+
+.image-rutineassign:hover {
+    transform: rotateY(0deg) scale(1.2); /* Regresa a su orientación normal y hace zoom */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Agrega sombra para destacar el efecto */
+    z-index: 300;
+} 
+
+.ourhistory-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-history {
+    display: flex;
+    flex-direction: row;
+}
+
+.ourhistory-container h2 {
+    margin: 3vb;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.3vw;
+    font-size: 4vb;
+}
+
+.clock-father {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+.clock-container {
+    width: 20vw;
+    margin-left: 10vw;
+}
+
+.ourhistory-text {
+    width: 50%;
+    text-align: center;
+    padding-top: 7vh;
+    padding-left: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 3vh;
+}
+
+.comunity {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 10vb;
+}
+
+.comunity h2 {
+    font-size: 4vb;
+}
+
+.comunity p {
+    font-size: 2.5vb;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 1280px) {
+    .subheader {
+        flex-direction: column; /* Cambiar a disposición en columna */
+        height: auto; /* Ajustar altura para el contenido */
+        justify-content: center;
+    }
+
+    .container-img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto;
+        margin-bottom: 20px; /* Espacio entre la imagen y el login */
+    }
+
+    .welcome-img {
+        width: 80%; /* Ajustar el tamaño de la imagen */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    .login-space {
+        width: 100%; /* Login ocupa todo el ancho */
+        height: auto;
+    }
+
+    .form-login {
+        width: 90%; /* Ajustar el tamaño del formulario */
+        font-size: 1.8vb; /* Reducir el tamaño del texto */
+    }
+
+    .register-button, .login-button {
+        font-size: 1.6vb; /* Reducir el tamaño del botón */
+    }
+
+    .input-username input, .input-password input {
+        font-size: 1.6vb; /* Reducir el tamaño del texto en inputs */
+    }
+    .ourhistory-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .our-history{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .clock-father {
+        position: relative;
+    }
+
+    .ourhistory-text {
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto;
+    }
+
+    .login-space {
+        width: 100%; /* Login ocupa todo el ancho */
+        height: auto;
+    }
+
+    .form-login {
+        width: 100%; /* Formulario ocupa todo el ancho disponible */
+        font-size: 1.6vb; /* Reducir un poco más el texto */
+    }
+
+    .register-button, .login-button {
+        font-size: 1.4vb; /* Ajustar el tamaño de los botones */
+    }
+
+    .input-username input, .input-password input {
+        font-size: 1.4vb; /* Ajustar tamaño del texto en los inputs */
+    }
+    .ourhistory-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .our-history{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .clock-father {
+        margin-top: 5vh;
+        width: 100%;
+        height: auto;
+    }
+    .clock-container {
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        width: 40vw;
+    }
+
+    .presentation-imgscontainer {
+        display:  flex;
+        flex-direction: column;
+        
+    }
+
+    .createtags-img {
+        width: 70vw;
+        margin: 3vb;
+    }
+
+    .dashboard-img {
+        width: 70vw;
+        
+        margin: 1vb;
+        margin-bottom: 3vb;
+    }
+
+    
+     
+}

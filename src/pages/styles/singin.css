@@ -1,0 +1,202 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    padding: 2vb;
+    height: auto;
+    margin: 5vb;
+    border-radius: 4vb;
+}
+
+.form-partone {
+    display: flex;
+    flex-direction: row;
+}
+
+.data-person {
+    text-align: center;
+    margin-right: 15vb;
+    margin-top: 5vb;
+    padding-left: 8vb;
+    padding-top: 14vb;
+}
+
+.data-person input {
+    margin: 2vb;
+    border: none;
+    background-color: #e7e7e7;
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vw;
+}
+
+
+.data-health {
+    margin-left: 15vb;
+    margin-top: 5vb;
+}
+
+.age {
+    margin: 2vb;
+    border: none;
+    background-color: #e7e7e7;
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+ }
+
+
+.input-field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    width: 40%;
+}
+
+.label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.title-label {
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+}
+
+.terms-container {
+    margin: 20px 0; /* Espaciado alrededor del contenedor de términos */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.terms-link {
+    color: #007bff;
+    text-decoration: none; /* Sin subrayado */
+}
+
+.terms-link:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.main-containers {
+    background: linear-gradient(135deg, #08151f, #1d8d91, #08151f);
+    background-size: 200% 200%; /* Aumenta el tamaño del fondo */
+    animation: gradientShift 5s ease infinite; /* Animación de movimiento del fondo */
+    width: 100%;
+    
+}
+    
+
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; } /* A mitad de camino, llega al 100% */
+    100% { background-position: 0% 50%; } /* Regresa suavemente al inicio */
+}
+
+
+.data-contact {
+    margin-top: 6vh;
+}
+
+.data-contact input {
+    margin: 2vb;
+    border: none;
+    background-color: #e7e7e7;
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vw;
+}
+
+.data-contact input:hover {
+    background-color: #c0c0c0;
+    font-size: 2vb;
+    
+}
+
+.data-person input:hover {
+    background-color: #c0c0c0;
+    font-size: 2vb;
+    
+}
+
+.age:hover {
+    background-color: #c0c0c0;
+    font-size: 2vb;
+    
+}
+
+.options-list {
+    list-style-type: none; /* Elimina el estilo de lista por defecto */
+    padding: 0; /* Elimina el padding */
+}
+
+.options-list li {
+    margin: 0 10px; /* Espaciado entre los elementos */
+    cursor: pointer; /* Cambia el cursor a mano al pasar el ratón */
+    padding: 5px 10px; /* Padding alrededor del texto */
+    transition: background-color 0.3s; /* Animación al cambiar el fondo */
+    margin: 0.8vh; /* Espaciado vertical */
+}
+
+.options-list li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+}
+
+.options-list li.selected {
+    background-color: #1ab7bc; /* Color de fondo para el elemento seleccionado */
+    color: white; /* Color de texto para el elemento seleccionado */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+@media (max-width: 900px) {
+    .form-partone {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .data-health {
+        left: -10vw;
+        margin: 0;
+        width: 100%;
+    }
+    .data-person {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .data-person input {
+        width: 40vw;
+    }
+
+    .data-health input {
+        width: 40vw;
+    }
+    
+    .data-contact input {
+        width: 40vw;
+    }
+}

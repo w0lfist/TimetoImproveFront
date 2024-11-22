@@ -1,0 +1,168 @@
+.sub-header {
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(135deg, #b0cf6a, #00a8b4);
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    box-sizing: border-box;
+    transition: height 0.3s ease;
+    overflow: hidden; /* Ensure the slider doesn't overflow */
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.container-slider {
+    width: 100%; /* Ajustado para ocupar más espacio ahora que no está el Login */
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    overflow: hidden; /* Hide overflow to make slider smooth */
+}
+
+.advice-item {
+    width: 100%;
+    font-size: 4vb; /* Tamaño del texto más grande */
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    opacity: 0.9; /* Para que no afecte el flujo de los demás elementos */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de entrada */
+.fade-in {
+    transform: translateX(0); /* Texto visible */
+    opacity: 1; /* Completamente visible */
+}
+
+/* Efecto de salida */
+.fade-out {
+    transform: translateX(-100%); /* Se desplaza hacia la izquierda */
+    opacity: 0; /* Desaparece */
+}
+
+.presentation {
+    margin: 5vb;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+.reset-button {
+    width: 45%;
+    height: 5vh;
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    background: none;
+    border:0.5vb solid #1a4dbc;
+    border-radius: 1.5vb;
+    color: #1a4dbc;
+}
+
+.reset-button:hover {
+    border-color: #072566;
+    color: #072566;
+    cursor: pointer;
+}
+
+.create-eliminate {
+    position: relative;
+    width: 45%;
+    left: 21.8vw;
+    margin-bottom: 10vh;
+}
+
+.create-button {
+    width: 48%;
+    height: 5vh;
+    margin-right: 0.2vw;
+    background: none;
+    border:0.5vb solid #70bc1a;
+    border-radius: 1.5vb;
+    color: #70bc1a;
+}
+
+.create-button:hover {
+    border-color: #305307;
+    color: #305307;
+    cursor: pointer;
+}
+
+.eliminate-button {
+    width: 50%;
+    height: 5vh;
+    margin-left: 0.2vw;
+    background: none;
+    border:0.5vb solid #bc1a1a;
+    border-radius: 1.5vb;
+    color: #bc1a1a;
+}
+
+.eliminate-button:hover {
+    border-color: darkred;
+    color: darkred;
+    cursor: pointer;
+}
+
+.introduction-dashboard {
+    margin: 2vb;
+}
+
+.introduction-dashboardt {
+    margin: 2vb;
+    color: #004e97;
+}
+
+.no-tasks {
+    color: #bc1a1a;
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 1200px) {
+    .advice-item {
+        font-size: 3vw; /* Ajusta el tamaño del texto en pantallas más grandes */
+    }
+}
+
+/* Para pantallas medianas */
+@media (max-width: 768px) {
+    .advice-item {
+        font-size: 5vw; /* Aumenta el tamaño del texto en pantallas medianas */
+    }
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    .advice-item {
+        font-size: 6vw; /* Texto más grande en pantallas pequeñas */
+    }
+    .reset-button {
+        width: 60%;
+    }
+    .create-eliminate {
+        left: 16vw;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+    
+    .eliminate-button {
+        width: 50%;
+        height: 6vh;
+    }
+
+    .create-button{
+        width: 50%;
+        height: 6vh;
+    }
+}

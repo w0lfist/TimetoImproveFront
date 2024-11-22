@@ -1,0 +1,168 @@
+.info-containers {
+    flex-grow: 1;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.create-tags {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.introduction-tags { 
+    width: 50%;
+    font-size: 1.5vb;
+    margin: 5vb;
+}
+
+.createtags {
+    width: 100%;
+}
+
+.cratetags-form form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container-rutineassign {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+.container-rutineassign label {
+    width: 60%;
+    text-align: center;
+}
+
+.createtag-container {
+    width: 40%;
+    margin-left: 5vw;
+}
+
+.routines-img {
+    position: relative;
+    width: 100%;
+    height: 50.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.routines-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5vb;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+
+.container-rutineassign p {
+    margin: 1vh;
+}
+
+.container-rutineassign input {
+    height: 2vh;
+    width: 60%;
+    text-align: center;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 100%;
+    margin-top: 2vh;
+}
+
+.day-list {
+    list-style-type: none; /* Elimina el estilo de lista por defecto */
+    padding: 0; /* Elimina el padding */
+  }
+  
+  .day-list li {
+    margin: 0 10px; /* Espaciado entre los días */
+    cursor: pointer; /* Cambia el cursor a mano al pasar el ratón */
+    padding: 5px 10px; /* Padding alrededor del texto */
+    transition: background-color 0.3s; /* Animación al cambiar el fondo */
+    margin: 0.8vb;
+  }
+  
+  .day-list li:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+  }
+  
+  .day-list li.selected {
+    background-color: #1ab7bc; /* Color de fondo para el día seleccionado */
+    color: white; /* Color de texto para el día seleccionado */
+    border-radius: 5px; /* Esquinas redondeadas */
+  }
+
+  .createtag-container p {
+    margin-top: 1vb;
+    margin-bottom: 2vb;
+  }
+
+  .createtag-button {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .createtag-button p {
+    width: 50%;
+    margin-top: 2vh;
+  }
+  .createtag-button button {
+    margin-top: 4vh;
+    height: 3vh;
+    width: 50%;
+    color: black;
+    border: 0.3vb solid #aaf300;
+    border-radius: 2vb;
+    background: none;
+    cursor: pointer;
+  }
+
+  .button-finish {
+    width: 70%;
+    height: 5%;
+    padding-top: 0.3vh;
+    padding-bottom: 0.3vh;
+    background: linear-gradient(135deg, #1ab7bc, #080d1f);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+    border-radius: 1vb;
+    border: none;
+    color: white;
+    cursor: pointer; 
+  }
+
+  .button-routine {
+    width: 40%;
+    height: 3vh;
+    margin-left: 1vw;
+    border: 0.3vb solid #080d1f;
+    border-radius: 1vb;
+    background: none;
+    color: black;
+    cursor: pointer;
+  }
+
+  .createtag-button button:hover {
+    background-color: rgb(245, 245, 245);
+    border: 0.3vb solid #75a700;
+  }
+
+  .button-finish:hover {
+    background: linear-gradient(135deg, #118488, #080d1f);
+    background-size: 200% 200%;
+    animation: gradientShift 5s ease infinite;
+  }
+
+  .button-routine:hover {
+    border: 0.3vb solid #162458;
+    background-color: rgb(245, 245, 245);
+  }
+

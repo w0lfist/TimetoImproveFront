@@ -1,0 +1,178 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh; /* Ajustamos el gap usando vh para hacerlo responsive */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 5vw; /* Para dar espacio en pantallas más grandes */
+    
+}
+
+.task-image {
+    width: auto;
+    height: 100%;
+}
+
+.task-image:hover {
+    transform: scale(1.4); /* Regresa a su orientación normal y hace zoom */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Agrega sombra para destacar el efecto */
+    z-index: 300;
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 3vh 3vw; /* Padding adaptable a las pantallas */
+    border-radius: 1.5vh;
+    width: 30vw; /* Hacemos que ocupe el 90% del ancho de la pantalla */
+    height: 15vh;
+    position: relative;
+    flex-direction: column;
+    gap: 2vh;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+.task-card h2 {
+    position: absolute;
+    margin: 0;
+    font-size: 2.2vh; /* Escalar el tamaño de fuente con la pantalla */
+    top: 1vh;
+    left: 1vw;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+.task-card .routine-name {
+    position: absolute;
+    font-size: 1.5vh; /* Ajustar tamaño de la fuente al viewport */
+    text-align: center;
+    flex-grow: 1;
+    top: 7.5vh;
+    left: 4vw;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.task-card .image {
+    position: absolute;
+    right: 3vw;
+    width: 14vw; /* Hacer la imagen adaptable */
+    height: 17vh;
+    border-radius: 5%; /* Suavizar esquinas de la imagen */
+}
+
+.task-card .state {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+    font-size: 2vh; /* Ajustar el tamaño de fuente */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+.task-card.red .state {
+    color: red;
+}
+
+.task-card.blue .state {
+    color: rgb(238, 255, 0);
+}
+
+.task-card.green .state {
+    color: green;
+}
+
+.title {
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    font-size: 3vh; /* Hacemos el título responsive */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+.task-card .start-button {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    padding: 0.2vh 0.5vw; /* Hacemos el padding responsivo */
+    background-color: #48630b;
+    color: white;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 2vh; /* Escalar tamaño de fuente con la pantalla */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+}
+
+.task-card .start-button:hover {
+    background-color: #91ad52; /* Cambiar color al pasar el cursor */
+}
+.delete-button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de puntero */
+    color: rgb(15, 15, 15); /* Color del ícono */
+    position: absolute;
+    top: 0.4vh;
+    right: 0.4vw;
+  }
+  
+  .delete-button:hover {
+    color: darkred; /* Color del ícono al pasar el mouse */
+  }
+/* Estilos responsive adicionales para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .task-card {
+        
+        width: 100%; /* Ajustamos el ancho de la tarjeta */
+    }
+
+    .task-card h2 {
+        font-size: 2vh; /* Aumentamos el tamaño de la fuente en pantallas más pequeñas */
+    }
+
+    .task-card .routine-name {
+        font-size: 1.5vh;
+        top: 5vh;
+        left: 10vw;
+    }
+
+    .task-card .image {
+        width: 25vw; /* La imagen será más grande en pantallas pequeñas */
+        height: 25vw;
+        top: 8vh;
+        right: 25vw;
+    }
+
+    .task-card .state {
+        font-size: 1.5vh; /* Aumentar la fuente en pantallas más pequeñas */
+    }
+
+    .task-card .start-button {
+        padding: 1vh 2vw;
+        font-size: 1.5vh; /* Aumentamos el tamaño del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    .task-card .image {
+        width: 25vw; /* La imagen será más grande en pantallas pequeñas */
+        height: 25vw;
+        top: 6.5vh;
+        right: 25vw;
+    }
+    .task-card .routine-name {
+        font-size: 1.5vh;
+        top: 4vh;
+        left: 15vw;
+    }
+}

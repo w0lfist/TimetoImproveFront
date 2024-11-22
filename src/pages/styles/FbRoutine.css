@@ -1,0 +1,128 @@
+.exercise-container {
+    border: 1px solid #ddd;
+    padding: 5vb;
+    margin: 5vb 0;
+    background-color: #131313;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.exercise-details {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.set-container {
+    margin: 2vb 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8vb;
+    width: 20vw;
+}
+
+.set-container input {
+    width: 7vw;
+    border: 0.3vb solid #1ab7bc;
+    border-radius: 0.5vb;
+    color: white;
+    background: none;
+    text-align: center;
+    height: 2.4vh;
+}
+
+.timer-container {
+    margin-top: 2vb;
+    font-family: "Roboto", sans-serif;
+}
+
+.timer-container button {
+    border-radius: 1vb;
+    border: 0.2vb solid rgb(162, 255, 55);
+    background: none;
+    font-size: 2vb;
+    color: white;
+    width: 7vw;
+    cursor: pointer;
+}
+
+.exercise-break {
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 2vb;
+}
+
+.exercise-break button {
+    border-radius: 1vb;
+    border: 0.3vb solid rgb(162, 255, 55);
+    background: none;
+    font-size: 2vb;
+    color: white;
+    width: 10vw;
+    cursor: pointer;
+}
+
+.max-repetitions {
+    margin: 2vb;
+}
+
+.max-repetitions input {
+    border: 0.3vb solid rgb(53, 53, 53);
+    border-radius: 0.5vb;
+    background: none;
+    color: white;
+    width: 5vw;
+    height: 3vh;
+    margin: 0.5vb;
+    text-align: center;
+
+}
+
+.exercise-video {
+    width: 25vw;
+}
+
+.finish-button {
+    width: 100%;
+    height: 4vh;
+    background: none;
+    color: black;
+    border-radius: 1vb;
+    border: 0.5vb solid rgb(47, 161, 32);
+    cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+    .exercise-video{
+        width: 60vw;
+    }
+
+    .exercise-container {
+        width: 100vw;
+        position: relative;
+        left: -10.5vw;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .timer-container button {
+        font-size: 1.5vb;
+        width: 20vw;
+        margin-bottom: 2vh;
+    }
+
+    .exercise-break button {
+        font-size: 1.5vb;
+        width: 30vw;
+        margin-bottom: 2vh;
+    }
+
+    .max-repetitions input {
+        width: 10vw;
+    }
+
+    .finish-button {
+        margin-top: 2vh;
+    }
+}

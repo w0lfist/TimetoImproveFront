@@ -1,0 +1,134 @@
+.account-settings-container {
+    padding: 20px;
+    width: 40vw;
+    margin: 0 auto;
+    background-color: #080d1f;
+    color: #fff;
+    margin-top: 3vh;
+}
+
+.section-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-toggle button {
+    padding: 10px;
+    border: none;
+    background-color: #141d29;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.section-toggle button:hover {
+    background-color: #1a2536;
+}
+
+.section-toggle .active {
+    background-color: #3a4a5b;
+}
+
+.section-content {
+    background-color: #1a2536;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-content input, select {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1a2536;
+    color: #fff;
+}
+
+.password-update-form {
+    margin-top: 3vh;
+}
+
+.password-update-form input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #1a2536;
+    color: #fff;
+}
+
+.section-content input::placeholder {
+    color: #888;
+}
+
+.update-button,
+.reassign-button,
+.deleteuser-button,
+.update-password-button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    border-radius: 1.5vb;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.update-button {
+    border:0.5vb solid #a9ff6f;
+    color: #fff;
+}
+
+.update-button:hover {
+    border:0.5vb solid #417e19;
+}
+
+.reassign-button {
+    border:0.5vb solid #0acafa;
+    color: #fff;
+}
+
+.reassign-button:hover {
+    border:0.5vb solid #006188;
+}
+
+.deleteuser-button {
+    border:0.5vb solid #9e1f11;
+    color: #fff;
+}
+
+.deleteuser-button:hover {
+    border:0.5vb solid #550800;
+}
+
+.update-password-button {
+    color: white;
+    border: 0.4vb solid white;
+}
+
+.password-update-form {
+    margin-bottom: 20px;
+    
+}
+
+.password-update-form input {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.message {
+    background-color: #3a4a5b;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .account-settings-container {
+        width: 90vw;
+        margin-top: 0;
+    }
+}

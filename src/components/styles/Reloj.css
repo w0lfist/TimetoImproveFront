@@ -1,0 +1,44 @@
+.reloj-container {
+    position: relative;
+    width: 100%; /* Ajusta el tamaño según tu logo */
+    height: auto; /* Ajusta el tamaño según tu logo */
+    background-color: #080d1f;
+  }
+  
+  .reloj-fijo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .manecilla {
+    position: absolute;
+    top: 0.1vh;
+    left: 4.6vw;
+    width: 50%;
+    height: 50%;
+    transform-origin: 50% 100%; /* 100% indica la parte inferior de la manecilla */
+  
+    /* Inicia la rotación desde el ángulo inicial */
+    transform: rotate(0deg);
+    
+    /* Rotación continua en 60 segundos */
+    animation: rotate-hand 60s linear infinite;
+  }
+  
+  @keyframes rotate-hand {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg); /* Rotación completa en 60 segundos */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .manecilla {
+    left: 9.5vw;
+    }
+  }

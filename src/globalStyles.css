@@ -1,0 +1,62 @@
+/* Estilos generales para el layout */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  height: 100vh;
+}
+/* Header y Footer reutilizables */
+header,
+footer {
+  background-color: #09071e; /* Mantén el mismo color de fondo */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+header {
+  font-size: 24px;
+}
+
+footer {
+  font-size: 2vb;
+}
+
+/* Contenedor de información */
+.info-container {
+  flex-grow: 1;
+  padding: 20px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de scroll */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #606060; /* Color similar al de YouTube */
+  border-radius: 10px; /* Redondear los bordes */
+  border: 2px solid transparent; /* Espacio alrededor de la barra */
+  background-clip: padding-box; /* Crear el borde dentro del área */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090; /* Color al pasar el mouse */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la barra de scroll */
+}
