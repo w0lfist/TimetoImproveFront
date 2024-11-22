@@ -103,7 +103,7 @@ function CreateTag({ fetchTasks }) {
           <div className="createtag-container">
             <label>¿Qué día vas a entrenar?</label>
             <ul className="day-list-createtag">
-              {["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado", "Domingo"].map((day) => (
+              {["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"].map((day) => (
                 <li
                   key={day}
                   onClick={() => handleDaySelection(day)}
