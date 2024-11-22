@@ -173,9 +173,6 @@ function SingIn() {
                     <input type="submit" value="Registrar" className="submit-button"/>
                 </form>
                 <div>
-            
-            
-            {error && <p style={{ color: "red" }}>{error}</p>} {/* Muestra el mensaje de error */}
         </div>
             </div>
             <Footer />
